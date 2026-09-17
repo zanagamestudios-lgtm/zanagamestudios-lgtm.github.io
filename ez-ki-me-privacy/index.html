@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ku">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ez Kî Me? — Siyaseta nihênîyê · Gizlilik Politikası · Privacy Policy. KRD, TR, EN.">
+  <meta name="theme-color" content="#16082b">
+  <meta property="og:title" content="Ez Kî Me? — Siyaseta nihênîyê">
+  <meta property="og:description" content="KRD · TR · EN — Zana Game Studios">
+  <meta property="og:image" content="logo.png">
+  <link rel="icon" type="image/png" href="logo.png">
+  <title>Ez Kî Me? — Siyaseta nihênîyê</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f6f1ff;
+      --muted: #c9b8e8;
+      --line: rgba(255,255,255,.16);
+      --panel: rgba(19,9,56,.9);
+      --pink: #ff4fa3;
+      --teal: #2ee6c7;
+      --electric: #3ce0ff;
+      --bg: #0b0514;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background: var(--bg);
+      font: 17px/1.7 "Noto Sans", ui-sans-serif, system-ui, sans-serif;
+    }
+    body::before {
+      content: "";
+      position: fixed; inset: 0; z-index: -1;
+      background:
+        radial-gradient(circle at 18% 0, rgba(60,224,255,.18), transparent 36%),
+        radial-gradient(circle at 88% 18%, rgba(255,79,163,.16), transparent 32%),
+        linear-gradient(180deg, #1e0e3d, #0b0514);
+    }
+    a { color: var(--electric); font-weight: 700; }
+    .wrap { width: min(100% - 32px, 860px); margin: auto; padding: 28px 0 70px; }
+    .hero {
+      display: flex; align-items: center; gap: 18px;
+      padding: 24px 26px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: linear-gradient(135deg, rgba(42,20,80,.95), rgba(17,9,52,.88));
+    }
+    .logo { width: 72px; height: 72px; object-fit: contain; flex: none; border-radius: 18px; }
+    h1, h2 { line-height: 1.2; letter-spacing: -.02em; }
+    h1 { margin: 0 0 6px; font-size: clamp(26px, 5vw, 42px); }
+    h2 { margin: 0 0 8px; font-size: 1.2rem; }
+    p { margin: 10px 0; }
+    .subtitle { margin: 0; color: var(--muted); font-size: 16px; }
+    .meta { margin-top: 10px; color: #e5dbf5; font-size: 14px; }
+    .languages {
+      display: flex; gap: 6px; margin: 22px 0;
+      padding: 6px; border-radius: 999px;
+      background: rgba(255,255,255,.08);
+      width: max-content; max-width: 100%;
+    }
+    button {
+      cursor: pointer; border: 0; border-radius: 999px;
+      min-height: 42px; padding: 8px 18px;
+      color: var(--muted); background: transparent;
+      font: 800 14px inherit; letter-spacing: .04em;
+    }
+    button.active, button:hover { background: var(--electric); color: #0b0514; }
+    .notice {
+      padding: 16px 18px; margin: 0 0 8px;
+      border-left: 4px solid var(--pink);
+      border-radius: 14px;
+      background: rgba(255,79,163,.12);
+    }
+    article {
+      padding: 24px 28px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: var(--panel);
+    }
+    article section { padding: 1.35rem 0; border-top: 1px solid var(--line); }
+    article section:first-of-type { border-top: 0; padding-top: .4rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin: 6px 0; }
+    .footer { margin-top: 28px; color: var(--muted); font-size: 14px; text-align: center; }
+    .policy { display: none; }
+    .policy.active { display: block; }
+    @media (max-width: 640px) {
+      .wrap { width: min(100% - 20px, 860px); padding-top: 14px; }
+      .hero { padding: 18px; }
+      .logo { width: 56px; height: 56px; }
+      article { padding: 18px; }
+      .languages { width: 100%; }
+      button { flex: 1; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <img class="logo" src="logo.png" alt="Ez Kî Me?">
+      <div>
+        <h1>Ez Kî Me?</h1>
+        <p class="subtitle">Siyaseta nihênîyê · Gizlilik Politikası · Privacy Policy</p>
+        <p class="meta">Zana Game Studios · 17 Îlon 2026</p>
+      </div>
+    </header>
+
+    <nav class="languages" aria-label="Language · Ziman · Dil">
+      <button class="active" data-language="krd" aria-pressed="true">KRD</button>
+      <button data-language="tr" aria-pressed="false">TR</button>
+      <button data-language="en" aria-pressed="false">EN</button>
+    </nav>
+
+    <article class="policy active" data-content="krd" lang="ku">
+      <div class="notice"><strong>Kurte:</strong> Ez Kî Me? lîstikeke eniyê ya ser amûrê ye. Hesab, server û analîtîk tune. Skor û mîheng tenê li ser amûra te dimînin. Piştgirî vebijarkî ye.</div>
+      <section>
+        <h2>1. Ev polîtîka ji bo çi ye?</h2>
+        <p>Ev rûpel rave dike ka Zana Game Studios di sepanê Ez Kî Me? de çi dane digire û çawa bikar tîne. Bi vekirina sepanê tu dikarî vê polîtîkayê bixwînî.</p>
+      </section>
+      <section>
+        <h2>2. Hesab û tor</h2>
+        <p>Hesab, têketin, e-name an profîl nayê xwestin. Lîstik dikare bê înternet were lîstin. Em lêgerîn, nav an nasnameya te li serverên xwe tomar nakin.</p>
+      </section>
+      <section>
+        <h2>3. Dane li ser amûrê</h2>
+        <p>Mîheng (sensor, hestiyarî, temen, dem), dîroka lîstikan û rewşa destpêkê dikarin li ser amûra te bên parastin. Ev dane bi nav an e-name ve nayên girêdan. Rakirina sepanê an paqijkirina daneyên sepanê van daneyan jê dike.</p>
+      </section>
+      <section>
+        <h2>4. Sensor</h2>
+        <p>Heke sensor vekirî be, sepan tenê ji bo tehrîka telefonê (jêr/jor) pîvana tevgerê bikar tîne da ku kart rast an çewt bêne nîşankirin. Ev pîvan nayê şandin. Heke sensor girtî be, tu dikarî bi bişkokan bilîzî.</p>
+      </section>
+      <section>
+        <h2>5. Piştgirî</h2>
+        <p>Bişkoka “Piştgirî Bide” vebijarkî ye. Reklam an dayînên hundirîn, heke bên girêdan, dê li gorî rêgezên Google Play / App Store û vê rûpelê bên nûkirin. Em agahiyên kart an hesabê bankê nabînin.</p>
+      </section>
+      <section>
+        <h2>6. Zarok</h2>
+        <p>Lîstik lîstikeke komê ye. Desteya temen dikare were sînorkirin (7+, 12+, 16+). Em bi zanebûn dane kesên di bin temenê qanûnî de naxwazin berhev bikin.</p>
+      </section>
+      <section>
+        <h2>7. Parvekirin û firotin</h2>
+        <p>Em daneyên kesane nafiroşin û ji bo profîlçêkirinê bi aliyên sêyem parve nakin. Lîstik ser amûrê dimîne.</p>
+      </section>
+      <section>
+        <h2>8. Têkilî û guhertin</h2>
+        <p>Em dikarin vê polîtîkayê nû bikin. Guhertoya herî nû li ser vê rûpelê ye. Pirs: <a href="mailto:zanagamestudios@gmail.com">zanagamestudios@gmail.com</a></p>
+      </section>
+    </article>
+
+    <article class="policy" data-content="tr" lang="tr">
+      <div class="notice"><strong>Özet:</strong> Ez Kî Me? cihazda çalışan bir alın oyunudur. Hesap, sunucu ve analitik yoktur. Skor ve ayarlar yalnızca cihazınızda kalır. Destek isteğe bağlıdır.</div>
+      <section>
+        <h2>1. Bu politika neyi açıklar?</h2>
+        <p>Bu sayfa, Zana Game Studios’un Ez Kî Me? uygulamasında hangi verileri işlediğini açıklar. Uygulamayı kullanarak bu metni okuyabilirsiniz.</p>
+      </section>
+      <section>
+        <h2>2. Hesap ve ağ</h2>
+        <p>Hesap, giriş, e-posta veya profil istenmez. Oyun internet olmadan oynanabilir. Aramalarınızı, adınızı veya kimliğinizi kendi sunucularımızda kaydetmeyiz.</p>
+      </section>
+      <section>
+        <h2>3. Cihazda tutulan veriler</h2>
+        <p>Ayarlar (sensör, hassasiyet, yaş, süre), oyun geçmişi ve ilk açılış durumu cihazınızda saklanabilir. Bunlar ad veya e-posta ile ilişkilendirilmez. Uygulamayı kaldırmak veya uygulama verisini temizlemek bu kayıtları siler.</p>
+      </section>
+      <section>
+        <h2>4. Sensör</h2>
+        <p>Sensör açıksa uygulama yalnızca telefon eğimini (aşağı/yukarı) okur; kartın doğru veya pas olduğunu işaretlemek için. Bu ölçüm gönderilmez. Sensör kapalıysa düğmelerle oynayabilirsiniz.</p>
+      </section>
+      <section>
+        <h2>5. Destek</h2>
+        <p>“Piştgirî Bide” isteğe bağlıdır. Reklam veya uygulama içi ödeme bağlanırsa Google Play / App Store kurallarına göre bu sayfa güncellenir. Kart veya banka bilgilerinizi görmeyiz.</p>
+      </section>
+      <section>
+        <h2>6. Çocuklar</h2>
+        <p>Oyun bir grup oyunudur. Yaş destesi sınırlanabilir (7+, 12+, 16+). Yasal yaşın altındakilerden bilinçli veri toplamayız.</p>
+      </section>
+      <section>
+        <h2>7. Paylaşım ve satış</h2>
+        <p>Kişisel verileri satmayız ve profil oluşturmak için üçüncü taraflarla paylaşmayız. Oyun cihazda kalır.</p>
+      </section>
+      <section>
+        <h2>8. İletişim ve değişiklikler</h2>
+        <p>Bu politikayı güncelleyebiliriz. Güncel sürüm bu sayfadadır. Sorular: <a href="mailto:zanagamestudios@gmail.com">zanagamestudios@gmail.com</a></p>
+      </section>
+    </article>
+
+    <article class="policy" data-content="en" lang="en">
+      <div class="notice"><strong>Summary:</strong> Ez Kî Me? is an on-device forehead party game. There is no account, server, or analytics. Scores and settings stay on your device. Support is optional.</div>
+      <section>
+        <h2>1. What this policy covers</h2>
+        <p>This page explains what Zana Game Studios processes in the Ez Kî Me? app. You can read it from the app or this website.</p>
+      </section>
+      <section>
+        <h2>2. Accounts and network</h2>
+        <p>No account, sign-in, email, or profile is required. The game can be played offline. We do not record your name, identity, or searches on our servers.</p>
+      </section>
+      <section>
+        <h2>3. Data stored on the device</h2>
+        <p>Preferences (sensor, sensitivity, age, duration), play history, and onboarding state may be stored on your device. They are not linked to a name or email. Uninstalling the app or clearing app data deletes this information.</p>
+      </section>
+      <section>
+        <h2>4. Sensor</h2>
+        <p>If the sensor is on, the app reads device tilt (down/up) only to mark a card correct or pass. That measurement is not sent anywhere. If the sensor is off, you can play with buttons.</p>
+      </section>
+      <section>
+        <h2>5. Support</h2>
+        <p>“Piştgirî Bide” is optional. If ads or in-app purchases are connected later, this page will be updated under Google Play / App Store rules. We do not see card or bank details.</p>
+      </section>
+      <section>
+        <h2>6. Children</h2>
+        <p>This is a group party game. The age deck can be limited (7+, 12+, 16+). We do not knowingly collect data from children below the applicable age.</p>
+      </section>
+      <section>
+        <h2>7. Sharing and sale</h2>
+        <p>We do not sell personal data and do not share it with third parties to build profiles. The game stays on the device.</p>
+      </section>
+      <section>
+        <h2>8. Contact and changes</h2>
+        <p>We may update this policy. The current version is this page. Questions: <a href="mailto:zanagamestudios@gmail.com">zanagamestudios@gmail.com</a></p>
+      </section>
+    </article>
+
+    <p class="footer">© 2026 Zana Game Studios · Ez Kî Me? · <a href="mailto:zanagamestudios@gmail.com">zanagamestudios@gmail.com</a></p>
+  </main>
+  <script>
+    const buttons = document.querySelectorAll("[data-language]");
+    const contents = document.querySelectorAll("[data-content]");
+    const titles = {
+      krd: "Ez Kî Me? — Siyaseta nihênîyê",
+      tr: "Ez Kî Me? — Gizlilik Politikası",
+      en: "Ez Kî Me? — Privacy Policy"
+    };
+    function setLanguage(language) {
+      buttons.forEach((button) => {
+        const on = button.dataset.language === language;
+        button.classList.toggle("active", on);
+        button.setAttribute("aria-pressed", String(on));
+      });
+      contents.forEach((content) => content.classList.toggle("active", content.dataset.content === language));
+      document.documentElement.lang = language === "krd" ? "ku" : language;
+      document.title = titles[language] || titles.krd;
+      history.replaceState(null, "", "#" + language);
+    }
+    buttons.forEach((button) => button.addEventListener("click", () => setLanguage(button.dataset.language)));
+    const initial = location.hash.slice(1).toLowerCase();
+    if (["krd", "tr", "en"].includes(initial)) setLanguage(initial);
+  </script>
+</body>
+</html>
