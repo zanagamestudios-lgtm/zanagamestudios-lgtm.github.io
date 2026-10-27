@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Amed SF Online — Gizlilik Politikası · Siyaseta nihênîyê · Privacy Policy. TR, KU, EN.">
+  <meta name="theme-color" content="#080c0a">
+  <meta property="og:title" content="Amed SF Online — Gizlilik Politikası">
+  <meta property="og:description" content="TR · KU · EN — Zana Game Studios">
+  <meta property="og:image" content="logo.png">
+  <link rel="icon" type="image/png" href="logo.png">
+  <title>Amed SF Online — Gizlilik Politikası</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f1f5f2;
+      --muted: #9baea4;
+      --line: rgba(255,255,255,.14);
+      --panel: rgba(17,24,21,.92);
+      --red: #d71f33;
+      --green: #12b57c;
+      --bg: #080c0a;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background: var(--bg);
+      font: 17px/1.7 "Noto Sans", ui-sans-serif, system-ui, sans-serif;
+    }
+    body::before {
+      content: "";
+      position: fixed; inset: 0; z-index: -1;
+      background:
+        radial-gradient(circle at 10% 0, rgba(215,31,51,.22), transparent 38%),
+        radial-gradient(circle at 92% 12%, rgba(18,181,124,.18), transparent 34%),
+        linear-gradient(180deg, #111815, #080c0a);
+    }
+    a { color: var(--green); font-weight: 700; }
+    .wrap { width: min(100% - 32px, 860px); margin: auto; padding: 28px 0 70px; }
+    .hero {
+      display: flex; align-items: center; gap: 18px;
+      padding: 24px 26px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: linear-gradient(135deg, rgba(58,11,18,.95), rgba(17,24,21,.9) 55%, rgba(3,58,39,.9));
+    }
+    .logo { width: 72px; height: 72px; object-fit: cover; flex: none; border-radius: 18px; background: #fff; }
+    h1, h2 { line-height: 1.2; letter-spacing: -.02em; }
+    h1 { margin: 0 0 6px; font-size: clamp(26px, 5vw, 42px); }
+    h2 { margin: 0 0 8px; font-size: 1.2rem; }
+    p { margin: 10px 0; }
+    .subtitle { margin: 0; color: var(--muted); font-size: 16px; }
+    .meta { margin-top: 10px; color: #d6e2db; font-size: 14px; }
+    .languages {
+      display: flex; gap: 6px; margin: 22px 0;
+      padding: 6px; border-radius: 999px;
+      background: rgba(255,255,255,.08);
+      width: max-content; max-width: 100%;
+    }
+    button {
+      cursor: pointer; border: 0; border-radius: 999px;
+      min-height: 42px; padding: 8px 18px;
+      color: var(--muted); background: transparent;
+      font: 800 14px inherit; letter-spacing: .04em;
+    }
+    button.active, button:hover { background: var(--red); color: #fff; }
+    .notice {
+      padding: 16px 18px; margin: 0 0 8px;
+      border-left: 4px solid var(--green);
+      border-radius: 14px;
+      background: rgba(18,181,124,.12);
+    }
+    article {
+      padding: 24px 28px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: var(--panel);
+    }
+    article section { padding: 1.35rem 0; border-top: 1px solid var(--line); }
+    article section:first-of-type { border-top: 0; padding-top: .4rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin: 6px 0; }
+    .footer { margin-top: 28px; color: var(--muted); font-size: 14px; text-align: center; }
+    .policy { display: none; }
+    .policy.active { display: block; }
+    @media (max-width: 640px) {
+      .wrap { width: min(100% - 20px, 860px); padding-top: 14px; }
+      .hero { padding: 18px; }
+      .logo { width: 56px; height: 56px; }
+      article { padding: 18px; }
+      .languages { width: 100%; }
+      button { flex: 1; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <img class="logo" src="logo.png" alt="Amed SF Online">
+      <div>
+        <h1>Amed SF Online</h1>
+        <p class="subtitle">Gizlilik Politikası · Siyaseta nihênîyê · Privacy Policy</p>
+        <p class="meta">Zana Game Studios · 27.10.2026</p>
+      </div>
+    </header>
+
+    <nav class="languages" aria-label="Dil · Ziman · Language">
+      <button class="active" data-language="tr" aria-pressed="true">TR</button>
+      <button data-language="krd" aria-pressed="false">KU</button>
+      <button data-language="en" aria-pressed="false">EN</button>
+    </nav>
+
+    <!-- ============================== TÜRKÇE ============================== -->
+    <article class="policy active" data-content="tr" lang="tr">
+      <div class="notice"><strong>Özet:</strong> Amed SF Online, Amedspor taraftarları için bağımsız ve ücretsiz bir maç takip ve skor tahmini uygulamasıdır. Reklam, analitik takip ve veri satışı yoktur. Tahminlerin ve ayarların cihazında saklanır. Bildirimler ve sıralama ligi açıldığında yalnızca bu özellikler için gereken en az veri işlenir.</div>
+      <section>
+        <h2>1. Bu politika neyi kapsar?</h2>
+        <p>Bu sayfa, Zana Game Studios tarafından geliştirilen Amed SF Online uygulamasının (iOS ve Android) hangi verileri hangi amaçla işlediğini açıklar. Amed SF Online, Amedspor kulübünün resmi uygulaması değildir ve kulüple bir bağı yoktur.</p>
+      </section>
+      <section>
+        <h2>2. Hesap</h2>
+        <p>Uygulamayı kullanmak için ad, e-posta, telefon numarası veya şifre istenmez. Sıralama ligi ve bildirimler etkinleştirildiğinde uygulama, cihaza özel <strong>anonim</strong> bir kimlik oluşturabilir (Google Firebase Authentication). Bu kimlik gerçek kimliğinle ilişkilendirilmez.</p>
+      </section>
+      <section>
+        <h2>3. Cihazında saklanan veriler</h2>
+        <ul>
+          <li>Skor tahminlerin ve kayıt zamanları</li>
+          <li>Dil, tema ve bildirim tercihlerin</li>
+          <li>Çevrimdışı kullanım için son indirilen maç verilerinin geçici kopyası</li>
+        </ul>
+        <p>Bu veriler yalnızca cihazında tutulur. Uygulamayı silmek veya uygulama verilerini temizlemek hepsini kaldırır.</p>
+      </section>
+      <section>
+        <h2>4. Maç verileri</h2>
+        <p>Fikstür, canlı skor, kadro ve puan durumu herkese açık spor veri servislerinden (ESPN) indirilir. Bu istekler sırasında, internetin doğal işleyişi gereği IP adresin ilgili servis tarafından görülebilir. Bu isteklere kişisel bilgi eklemeyiz.</p>
+      </section>
+      <section>
+        <h2>5. Bildirimler ve sıralama ligi</h2>
+        <p>Maç bildirimlerini (ilk 11, gol, kart, maç sonucu) açarsan cihazının bildirim belirteci ve seçtiğin bildirim türleri Google Firebase (Cloud Messaging, Firestore) üzerinde Avrupa bölgesindeki sunucularda saklanır. Sıralama ligine katılırsan tahminlerin, puanların ve seçtiğin takma ad sunucuda saklanır ve diğer kullanıcılara sıralamada gösterilebilir. Bildirimleri istediğin an ayarlardan veya cihaz ayarlarından kapatabilirsin.</p>
+      </section>
+      <section>
+        <h2>6. Paylaşım kartları</h2>
+        <p>Tahmin kartı görseli tamamen cihazında oluşturulur. Paylaşmayı seçersen görsel, seçtiğin uygulamaya (ör. Instagram, WhatsApp) cihazının paylaşım menüsü aracılığıyla gönderilir; bu uygulamaların kendi gizlilik politikaları geçerlidir.</p>
+      </section>
+      <section>
+        <h2>7. Reklam, analitik ve satış</h2>
+        <p>Uygulamada reklam ve analitik takip bulunmaz. Kişisel verilerini satmayız, kiralamayız ve profil oluşturmak için üçüncü taraflarla paylaşmayız. Tahmin ligi tamamen ücretsizdir; bahis, giriş ücreti veya para değeri olan ödül yoktur.</p>
+      </section>
+      <section>
+        <h2>8. Saklama ve silme</h2>
+        <p>Sunucudaki veriler (varsa) hesabın aktif olduğu sürece saklanır. Uygulama içinden veya aşağıdaki e-posta adresine yazarak tüm sunucu verilerinin silinmesini isteyebilirsin; talepler en geç 30 gün içinde yerine getirilir.</p>
+      </section>
+      <section>
+        <h2>9. Çocuklar</h2>
+        <p>Uygulama 13 yaş ve üzeri kullanıcılar için tasarlanmıştır. 13 yaşından küçük çocuklardan bilerek veri toplamayız.</p>
+      </section>
+      <section>
+        <h2>10. Hakların</h2>
+        <p>KVKK ve GDPR kapsamında verilerine erişme, düzeltme, silme ve işlemeye itiraz etme hakkına sahipsin. Talepler için bize yazabilirsin.</p>
+      </section>
+      <section>
+        <h2>11. İletişim ve değişiklikler</h2>
+        <p>Bu politikayı güncelleyebiliriz; güncel sürüm her zaman bu sayfadadır. Sorular: <a href="mailto:zanagamestudios@gmail.com">zanagamestudios@gmail.com</a></p>
+      </section>
+    </article>
+
+    <!-- ============================== KURMANCÎ ============================== -->
+    <article class="policy" data-content="krd" lang="ku">
+      <div class="notice"><strong>Kurte:</strong> Amed SF Online ji bo alîgirên Amedsporê sepaneke serbixwe û belaş e ji bo şopandina maçan û pêşbîniya skorê. Reklam, şopandina analîtîk û firotina daneyan tune. Pêşbînî û mîhengên te li ser amûra te dimînin. Dema agahdarî û lîga rêzbendiyê vebin, tenê daneyên herî kêm ên ji bo van taybetmendiyan pêwîst têne bikaranîn.</div>
+      <section>
+        <h2>1. Ev polîtîka çi vedigire?</h2>
+        <p>Ev rûpel rave dike ka sepana Amed SF Online (iOS û Android), ku Zana Game Studios çêkiriye, kîjan daneyan ji bo çi armancê bi kar tîne. Amed SF Online ne sepana fermî ya klûba Amedsporê ye û têkiliya wê bi klûbê re tune.</p>
+      </section>
+      <section>
+        <h2>2. Hesab</h2>
+        <p>Ji bo bikaranîna sepanê nav, e-name, hejmara telefonê an şîfre nayê xwestin. Dema lîga rêzbendiyê û agahdarî vebin, sepan dikare nasnameyeke <strong>anonîm</strong> a taybet bi amûrê çêbike (Google Firebase Authentication). Ev nasname bi nasnameya te ya rastîn ve nayê girêdan.</p>
+      </section>
+      <section>
+        <h2>3. Daneyên li ser amûra te</h2>
+        <ul>
+          <li>Pêşbîniyên skorê û demên tomarkirinê</li>
+          <li>Bijartinên ziman, tema û agahdariyê</li>
+          <li>Kopiyeke demkî ya daneyên maçan ji bo bikaranîna bê înternet</li>
+        </ul>
+        <p>Ev dane tenê li ser amûra te dimînin. Jêbirina sepanê an paqijkirina daneyên sepanê hemûyan jê dibe.</p>
+      </section>
+      <section>
+        <h2>4. Daneyên maçan</h2>
+        <p>Fîkstur, skora zindî, kadro û rêzbendî ji servîsên daneyên werzîşê yên giştî (ESPN) têne daxistin. Di van daxwazan de, li gorî xebata xwezayî ya înternetê, navnîşana IP ya te dikare ji aliyê wê servîsê ve were dîtin. Em agahiyên kesane li van daxwazan zêde nakin.</p>
+      </section>
+      <section>
+        <h2>5. Agahdarî û lîga rêzbendiyê</h2>
+        <p>Heke tu agahdariyên maçê vekî (11a yekem, gol, kart, encam), nîşana agahdariya amûra te û cureyên agahdariyê yên ku te hilbijartine li ser Google Firebase (Cloud Messaging, Firestore) li serverên li herêma Ewropayê têne tomarkirin. Heke tu beşdarî lîga rêzbendiyê bibî, pêşbînî, pûan û nasnava ku te hilbijartiye li ser serverê têne tomarkirin û dikarin di rêzbendiyê de ji bikarhênerên din re werin nîşandan. Tu dikarî agahdariyan her dem ji mîhengan vemirînî.</p>
+      </section>
+      <section>
+        <h2>6. Kartên parvekirinê</h2>
+        <p>Wêneyê karta pêşbîniyê bi tevahî li ser amûra te tê çêkirin. Heke tu parve bikî, wêne bi menuya parvekirinê ya amûra te ji sepana ku te hilbijartiye re tê şandin; polîtîkayên nepeniyê yên wan sepanan derbas dibin.</p>
+      </section>
+      <section>
+        <h2>7. Reklam, analîtîk û firotin</h2>
+        <p>Di sepanê de reklam û şopandina analîtîk tune. Em daneyên kesane nafiroşin, kirê nakin û ji bo profîlçêkirinê bi aliyên sêyem re parve nakin. Lîga pêşbîniyê bi tevahî belaş e; behîs, heqê ketinê an xelateke bi nirxê pereyî tune.</p>
+      </section>
+      <section>
+        <h2>8. Parastin û jêbirin</h2>
+        <p>Daneyên li ser serverê (heke hebin) heta ku hesab çalak be têne parastin. Tu dikarî ji nav sepanê an bi nameyekê ji navnîşana jêrîn jêbirina hemû daneyên serverê bixwazî; daxwaz herî dereng di nav 30 rojan de têne bicîhanîn.</p>
+      </section>
+      <section>
+        <h2>9. Zarok</h2>
+        <p>Sepan ji bo bikarhênerên 13 salî û jortir hatiye çêkirin. Em bi zanebûn daneyan ji zarokên di bin 13 saliyê de berhev nakin.</p>
+      </section>
+      <section>
+        <h2>10. Mafên te</h2>
+        <p>Li gorî KVKK û GDPRê mafê te heye ku tu bigihîjî daneyên xwe, wan rast bikî, jê bibî û li dijî bikaranîna wan derkevî. Ji bo daxwazan ji me re binivîse.</p>
+      </section>
+      <section>
+        <h2>11. Têkilî û guhertin</h2>
+        <p>Em dikarin vê polîtîkayê nû bikin; guhertoya herî nû her dem li ser vê rûpelê ye. Pirs: <a href="mailto:zanagamestudios@gmail.com">zanagamestudios@gmail.com</a></p>
+      </section>
+    </article>
+
+    <!-- ============================== ENGLISH ============================== -->
+    <article class="policy" data-content="en" lang="en">
+      <div class="notice"><strong>Summary:</strong> Amed SF Online is an independent, free match-tracking and score-prediction app for Amedspor fans. There are no ads, no analytics tracking and no sale of data. Your predictions and settings are stored on your device. When notifications and the leaderboard are enabled, only the minimum data those features need is processed.</div>
+      <section>
+        <h2>1. What this policy covers</h2>
+        <p>This page explains which data the Amed SF Online app (iOS and Android), developed by Zana Game Studios, processes and why. Amed SF Online is not an official Amedspor club app and is not affiliated with the club.</p>
+      </section>
+      <section>
+        <h2>2. Account</h2>
+        <p>No name, email, phone number or password is required to use the app. When the leaderboard and notifications are enabled, the app may create a device-specific <strong>anonymous</strong> identifier (Google Firebase Authentication). It is not linked to your real identity.</p>
+      </section>
+      <section>
+        <h2>3. Data stored on your device</h2>
+        <ul>
+          <li>Your score predictions and when you saved them</li>
+          <li>Language, theme and notification preferences</li>
+          <li>A temporary copy of recently downloaded match data for offline use</li>
+        </ul>
+        <p>This data stays on your device. Uninstalling the app or clearing its data removes it.</p>
+      </section>
+      <section>
+        <h2>4. Match data</h2>
+        <p>Fixtures, live scores, line-ups and standings are downloaded from public sports data services (ESPN). As part of how the internet works, your IP address may be visible to that service. We do not add personal information to these requests.</p>
+      </section>
+      <section>
+        <h2>5. Notifications and leaderboard</h2>
+        <p>If you turn on match notifications (line-ups, goals, cards, final score), your device's push token and the notification types you choose are stored on Google Firebase (Cloud Messaging, Firestore) servers in the European region. If you join the leaderboard, your predictions, points and the nickname you choose are stored on the server and may be shown to other users in the rankings. You can turn notifications off at any time in the app or device settings.</p>
+      </section>
+      <section>
+        <h2>6. Share cards</h2>
+        <p>The prediction card image is created entirely on your device. If you choose to share it, it is passed to the app you pick (e.g. Instagram, WhatsApp) through your device's share sheet; those apps' own privacy policies apply.</p>
+      </section>
+      <section>
+        <h2>7. Ads, analytics and sale</h2>
+        <p>The app contains no ads and no analytics tracking. We do not sell or rent personal data and do not share it with third parties for profiling. The prediction league is completely free: no betting, no entry fee and no prizes with monetary value.</p>
+      </section>
+      <section>
+        <h2>8. Retention and deletion</h2>
+        <p>Server-side data (if any) is kept while your account is active. You can request deletion of all server data from within the app or by emailing us; requests are completed within 30 days.</p>
+      </section>
+      <section>
+        <h2>9. Children</h2>
+        <p>The app is intended for users aged 13 and over. We do not knowingly collect data from children under 13.</p>
+      </section>
+      <section>
+        <h2>10. Your rights</h2>
+        <p>Under GDPR and Turkish KVKK you have the right to access, correct and delete your data and to object to its processing. Contact us to make a request.</p>
+      </section>
+      <section>
+        <h2>11. Contact and changes</h2>
+        <p>We may update this policy; the current version is always on this page. Questions: <a href="mailto:zanagamestudios@gmail.com">zanagamestudios@gmail.com</a></p>
+      </section>
+    </article>
+
+    <p class="footer">© 2026 Zana Game Studios · Amed SF Online · <a href="mailto:zanagamestudios@gmail.com">zanagamestudios@gmail.com</a></p>
+  </main>
+  <script>
+    const buttons = document.querySelectorAll("[data-language]");
+    const contents = document.querySelectorAll("[data-content]");
+    const titles = {
+      tr: "Amed SF Online — Gizlilik Politikası",
+      krd: "Amed SF Online — Siyaseta nihênîyê",
+      en: "Amed SF Online — Privacy Policy"
+    };
+    function setLanguage(language) {
+      buttons.forEach((button) => {
+        const on = button.dataset.language === language;
+        button.classList.toggle("active", on);
+        button.setAttribute("aria-pressed", String(on));
+      });
+      contents.forEach((content) => content.classList.toggle("active", content.dataset.content === language));
+      document.documentElement.lang = language === "krd" ? "ku" : language;
+      document.title = titles[language] || titles.tr;
+      history.replaceState(null, "", "#" + language);
+    }
+    buttons.forEach((button) => button.addEventListener("click", () => setLanguage(button.dataset.language)));
+    const initial = location.hash.slice(1).toLowerCase();
+    const alias = { ku: "krd" };
+    const lang = alias[initial] || initial;
+    if (["krd", "tr", "en"].includes(lang)) setLanguage(lang);
+  </script>
+</body>
+</html>
