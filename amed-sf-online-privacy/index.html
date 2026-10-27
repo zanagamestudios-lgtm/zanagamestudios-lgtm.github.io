@@ -122,7 +122,8 @@
       </section>
       <section>
         <h2>2. Hesap</h2>
-        <p>Uygulamayı kullanmak için ad, e-posta, telefon numarası veya şifre istenmez. Sıralama ligi ve bildirimler etkinleştirildiğinde uygulama, cihaza özel <strong>anonim</strong> bir kimlik oluşturabilir (Google Firebase Authentication). Bu kimlik gerçek kimliğinle ilişkilendirilmez.</p>
+        <p>Maç takibi, tahmin ve bildirimler için hesap gerekmez. <strong>Tahmin Şampiyonası</strong>na katılmak istersen Google veya Apple ile giriş yapabilirsin (Google Firebase Authentication). Bu durumda hesabının kimliği, e-posta adresin ve görünen adın Firebase Authentication'da saklanır. E-posta adresin hiçbir kullanıcıya gösterilmez.</p>
+        <p>Giriş yaptığında sıralamada görünecek bir <strong>takma ad</strong> oluşturulur (varsayılan: adın ve soyadının baş harfi). Takma adını Ayarlar'dan istediğin zaman değiştirebilirsin; takma ad, puanların ve sıran diğer kullanıcılara açıktır.</p>
       </section>
       <section>
         <h2>3. Cihazında saklanan veriler</h2>
@@ -138,8 +139,8 @@
         <p>Fikstür, canlı skor, kadro ve puan durumu herkese açık spor veri servislerinden (ESPN) indirilir. Bu istekler sırasında, internetin doğal işleyişi gereği IP adresin ilgili servis tarafından görülebilir. Bu isteklere kişisel bilgi eklemeyiz.</p>
       </section>
       <section>
-        <h2>5. Bildirimler ve sıralama ligi</h2>
-        <p>Maç bildirimlerini (ilk 11, gol, kart, maç sonucu) açarsan cihazının bildirim belirteci ve seçtiğin bildirim türleri Google Firebase (Cloud Messaging, Firestore) üzerinde Avrupa bölgesindeki sunucularda saklanır. Sıralama ligine katılırsan tahminlerin, puanların ve seçtiğin takma ad sunucuda saklanır ve diğer kullanıcılara sıralamada gösterilebilir. Bildirimleri istediğin an ayarlardan veya cihaz ayarlarından kapatabilirsin.</p>
+        <h2>5. Bildirimler ve Tahmin Şampiyonası</h2>
+        <p>Maç bildirimlerini (ilk 11, gol, kart, maç sonucu) açarsan cihazının bildirim belirteci ve seçtiğin bildirim türleri Google Firebase (Cloud Messaging, Firestore) üzerinde Avrupa bölgesindeki sunucularda saklanır. Tahmin Şampiyonası'na katılırsan tahminlerin, puanların ve takma adın sunucuda saklanır; takma adın ve puanların sıralamada herkese gösterilir, tahminlerin ise yalnızca sana görünür. Bildirimleri istediğin an ayarlardan veya cihaz ayarlarından kapatabilirsin.</p>
       </section>
       <section>
         <h2>6. Paylaşım kartları</h2>
@@ -151,7 +152,7 @@
       </section>
       <section>
         <h2>8. Saklama ve silme</h2>
-        <p>Sunucudaki veriler (varsa) hesabın aktif olduğu sürece saklanır. Uygulama içinden veya aşağıdaki e-posta adresine yazarak tüm sunucu verilerinin silinmesini isteyebilirsin; talepler en geç 30 gün içinde yerine getirilir.</p>
+        <p>Sunucudaki veriler hesabın aktif olduğu sürece saklanır. <strong>Ayarlar → Hesap → Hesabı sil</strong> ile hesabını ve tüm tahminlerini, puanlarını ve takma adını anında silebilirsin; sıralamadaki kayıtların en geç 24 saat içinde kaldırılır. İstersen aşağıdaki e-posta adresine de yazabilirsin; talepler en geç 30 gün içinde yerine getirilir.</p>
       </section>
       <section>
         <h2>9. Çocuklar</h2>
@@ -176,7 +177,8 @@
       </section>
       <section>
         <h2>2. Hesab</h2>
-        <p>Ji bo bikaranîna sepanê nav, e-name, hejmara telefonê an şîfre nayê xwestin. Dema lîga rêzbendiyê û agahdarî vebin, sepan dikare nasnameyeke <strong>anonîm</strong> a taybet bi amûrê çêbike (Google Firebase Authentication). Ev nasname bi nasnameya te ya rastîn ve nayê girêdan.</p>
+        <p>Ji bo şopandina maçan, pêşbînî û agahdariyan hesab ne pêwîst e. Heke tu bixwazî beşdarî <strong>Şampiyoniya Pêşbîniyê</strong> bibî, tu dikarî bi Google an Apple re têkevî (Google Firebase Authentication). Wê demê nasnameya hesab, navnîşana e-nameyê û navê te yê xuyayî di Firebase Authentication de têne parastin. Navnîşana e-nameya te ji tu bikarhêneran re nayê nîşandan.</p>
+        <p>Dema tu têkevî, ji bo rêzbendiyê <strong>nasnavek</strong> tê çêkirin (bi xwerû: navê te û tîpa yekem a paşnavê te). Tu dikarî wê her dem ji Mîhengan biguherînî; nasnav, pûan û rêza te ji bikarhênerên din re vekirî ne.</p>
       </section>
       <section>
         <h2>3. Daneyên li ser amûra te</h2>
@@ -192,8 +194,8 @@
         <p>Fîkstur, skora zindî, kadro û rêzbendî ji servîsên daneyên werzîşê yên giştî (ESPN) têne daxistin. Di van daxwazan de, li gorî xebata xwezayî ya înternetê, navnîşana IP ya te dikare ji aliyê wê servîsê ve were dîtin. Em agahiyên kesane li van daxwazan zêde nakin.</p>
       </section>
       <section>
-        <h2>5. Agahdarî û lîga rêzbendiyê</h2>
-        <p>Heke tu agahdariyên maçê vekî (11a yekem, gol, kart, encam), nîşana agahdariya amûra te û cureyên agahdariyê yên ku te hilbijartine li ser Google Firebase (Cloud Messaging, Firestore) li serverên li herêma Ewropayê têne tomarkirin. Heke tu beşdarî lîga rêzbendiyê bibî, pêşbînî, pûan û nasnava ku te hilbijartiye li ser serverê têne tomarkirin û dikarin di rêzbendiyê de ji bikarhênerên din re werin nîşandan. Tu dikarî agahdariyan her dem ji mîhengan vemirînî.</p>
+        <h2>5. Agahdarî û Şampiyoniya Pêşbîniyê</h2>
+        <p>Heke tu agahdariyên maçê vekî (11a yekem, gol, kart, encam), nîşana agahdariya amûra te û cureyên agahdariyê yên ku te hilbijartine li ser Google Firebase (Cloud Messaging, Firestore) li serverên li herêma Ewropayê têne tomarkirin. Heke tu beşdarî Şampiyoniya Pêşbîniyê bibî, pêşbînî, pûan û nasnava te li ser serverê têne tomarkirin; nasnav û pûanên te di rêzbendiyê de ji her kesî re xuya dibin, lê pêşbîniyên te tenê ji te re xuya ne. Tu dikarî agahdariyan her dem ji mîhengan vemirînî.</p>
       </section>
       <section>
         <h2>6. Kartên parvekirinê</h2>
@@ -205,7 +207,7 @@
       </section>
       <section>
         <h2>8. Parastin û jêbirin</h2>
-        <p>Daneyên li ser serverê (heke hebin) heta ku hesab çalak be têne parastin. Tu dikarî ji nav sepanê an bi nameyekê ji navnîşana jêrîn jêbirina hemû daneyên serverê bixwazî; daxwaz herî dereng di nav 30 rojan de têne bicîhanîn.</p>
+        <p>Daneyên li ser serverê heta ku hesab çalak be têne parastin. Bi <strong>Mîheng → Hesab → Hesabê jê bibe</strong> tu dikarî hesab û hemû pêşbînî, pûan û nasnava xwe yekser jê bibî; tomarên te yên di rêzbendiyê de herî dereng di nav 24 saetan de têne rakirin. Tu dikarî ji navnîşana jêrîn re jî binivîsî; daxwaz herî dereng di nav 30 rojan de têne bicîhanîn.</p>
       </section>
       <section>
         <h2>9. Zarok</h2>
@@ -230,7 +232,8 @@
       </section>
       <section>
         <h2>2. Account</h2>
-        <p>No name, email, phone number or password is required to use the app. When the leaderboard and notifications are enabled, the app may create a device-specific <strong>anonymous</strong> identifier (Google Firebase Authentication). It is not linked to your real identity.</p>
+        <p>No account is needed to follow matches, make predictions or receive alerts. If you want to join the <strong>Prediction Championship</strong>, you can sign in with Google or Apple (Google Firebase Authentication). Your account identifier, email address and display name are then stored in Firebase Authentication. Your email address is never shown to other users.</p>
+        <p>When you sign in, a <strong>nickname</strong> for the leaderboard is created (default: your first name and last initial). You can change it any time in Settings; your nickname, points and rank are visible to other users.</p>
       </section>
       <section>
         <h2>3. Data stored on your device</h2>
@@ -246,8 +249,8 @@
         <p>Fixtures, live scores, line-ups and standings are downloaded from public sports data services (ESPN). As part of how the internet works, your IP address may be visible to that service. We do not add personal information to these requests.</p>
       </section>
       <section>
-        <h2>5. Notifications and leaderboard</h2>
-        <p>If you turn on match notifications (line-ups, goals, cards, final score), your device's push token and the notification types you choose are stored on Google Firebase (Cloud Messaging, Firestore) servers in the European region. If you join the leaderboard, your predictions, points and the nickname you choose are stored on the server and may be shown to other users in the rankings. You can turn notifications off at any time in the app or device settings.</p>
+        <h2>5. Notifications and Prediction Championship</h2>
+        <p>If you turn on match notifications (line-ups, goals, cards, final score), your device's push token and the notification types you choose are stored on Google Firebase (Cloud Messaging, Firestore) servers in the European region. If you join the Prediction Championship, your predictions, points and nickname are stored on the server; your nickname and points are shown publicly on the leaderboard, while your predictions are visible only to you. You can turn notifications off at any time in the app or device settings.</p>
       </section>
       <section>
         <h2>6. Share cards</h2>
@@ -259,7 +262,7 @@
       </section>
       <section>
         <h2>8. Retention and deletion</h2>
-        <p>Server-side data (if any) is kept while your account is active. You can request deletion of all server data from within the app or by emailing us; requests are completed within 30 days.</p>
+        <p>Server-side data is kept while your account is active. With <strong>Settings → Account → Delete account</strong> you can immediately delete your account together with all predictions, points and your nickname; your leaderboard rows are removed within 24 hours. You can also email us; requests are completed within 30 days.</p>
       </section>
       <section>
         <h2>9. Children</h2>
