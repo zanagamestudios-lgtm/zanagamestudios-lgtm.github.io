@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tribün — Gizlilik Politikası · Polîtîkaya nepenîtiyê · Privacy Policy. TR, KU, EN.">
+  <meta name="theme-color" content="#0a0d14">
+  <meta property="og:title" content="Tribün — Gizlilik Politikası">
+  <meta property="og:description" content="TR · KU · EN — Zana Game Studios">
+  <meta property="og:image" content="logo.png">
+  <link rel="icon" type="image/png" href="logo.png">
+  <title>Tribün — Gizlilik Politikası</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f1f5f2;
+      --muted: #9baea4;
+      --line: rgba(255,255,255,.14);
+      --panel: rgba(17,24,21,.92);
+      --red: #d71f33;
+      --green: #12b57c;
+      --bg: #080c0a;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background: var(--bg);
+      font: 17px/1.7 "Noto Sans", ui-sans-serif, system-ui, sans-serif;
+    }
+    body::before {
+      content: "";
+      position: fixed; inset: 0; z-index: -1;
+      background:
+        radial-gradient(circle at 10% 0, rgba(215,31,51,.22), transparent 38%),
+        radial-gradient(circle at 92% 12%, rgba(18,181,124,.18), transparent 34%),
+        linear-gradient(180deg, #111815, #080c0a);
+    }
+    a { color: var(--green); font-weight: 700; }
+    .wrap { width: min(100% - 32px, 860px); margin: auto; padding: 28px 0 70px; }
+    .hero {
+      display: flex; align-items: center; gap: 18px;
+      padding: 24px 26px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: linear-gradient(135deg, rgba(58,11,18,.95), rgba(17,24,21,.9) 55%, rgba(3,58,39,.9));
+    }
+    .logo { width: 72px; height: 72px; object-fit: cover; flex: none; border-radius: 18px; background: #fff; }
+    h1, h2 { line-height: 1.2; letter-spacing: -.02em; }
+    h1 { margin: 0 0 6px; font-size: clamp(26px, 5vw, 42px); }
+    h2 { margin: 0 0 8px; font-size: 1.2rem; }
+    p { margin: 10px 0; }
+    .subtitle { margin: 0; color: var(--muted); font-size: 16px; }
+    .meta { margin-top: 10px; color: #d6e2db; font-size: 14px; }
+    .languages {
+      display: flex; gap: 6px; margin: 22px 0;
+      padding: 6px; border-radius: 999px;
+      background: rgba(255,255,255,.08);
+      width: max-content; max-width: 100%;
+    }
+    button {
+      cursor: pointer; border: 0; border-radius: 999px;
+      min-height: 42px; padding: 8px 18px;
+      color: var(--muted); background: transparent;
+      font: 800 14px inherit; letter-spacing: .04em;
+    }
+    button.active, button:hover { background: var(--red); color: #fff; }
+    .notice {
+      padding: 16px 18px; margin: 0 0 8px;
+      border-left: 4px solid var(--green);
+      border-radius: 14px;
+      background: rgba(18,181,124,.12);
+    }
+    article {
+      padding: 24px 28px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: var(--panel);
+    }
+    article section { padding: 1.35rem 0; border-top: 1px solid var(--line); }
+    article section:first-of-type { border-top: 0; padding-top: .4rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin: 6px 0; }
+    .footer { margin-top: 28px; color: var(--muted); font-size: 14px; text-align: center; }
+    .policy { display: none; }
+    .policy.active { display: block; }
+    @media (max-width: 640px) {
+      .wrap { width: min(100% - 20px, 860px); padding-top: 14px; }
+      .hero { padding: 18px; }
+      .logo { width: 56px; height: 56px; }
+      article { padding: 18px; }
+      .languages { width: 100%; }
+      button { flex: 1; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <img class="logo" src="logo.png" alt="Tribün">
+      <div>
+        <h1>Tribün</h1>
+        <p class="subtitle">Gizlilik Politikası · Polîtîkaya nepenîtiyê · Privacy Policy</p>
+        <p class="meta">Zana Game Studios · 29.10.2026</p>
+      </div>
+    </header>
+
+    <nav class="languages" aria-label="Dil · Ziman · Language">
+      <button class="active" data-language="tr" aria-pressed="true">TR</button>
+      <button data-language="krd" aria-pressed="false">KU</button>
+      <button data-language="en" aria-pressed="false">EN</button>
+    </nav>
+
+    <!-- ============================== TÜRKÇE ============================== -->
+    <article class="policy active" data-content="tr" lang="tr">
+      <div class="notice"><strong>Özet:</strong> Tribün, penaltı ve serbest vuruş atıp kendi tribününü tasarladığın ücretsiz bir futbol oyunudur. Oyun hesap olmadan oynanır ve ilerlemen cihazında saklanır. Apple veya Google ile giriş yaparsan sıralamalar ve arkadaş özellikleri için en az veri işlenir. Ekranın altında bir banner reklam gösterilir; ödüllü reklam yalnızca “Bizi destekle” bölümünden kendin seçersen açılır. Veri satmıyoruz ve analitik takip kullanmıyoruz.</div>
+      <section>
+        <h2>1. Bu politika neyi kapsar?</h2>
+        <p>Bu politika, Zana Game Studios tarafından geliştirilen <strong>Tribün</strong> mobil oyununun (iOS ve Android) hangi verileri neden işlediğini açıklar. Veri sorumlusu Zana Game Studios'tur; iletişim: <a href="mailto:zanagamestudios@gmail.com">zanagamestudios@gmail.com</a>.</p>
+      </section>
+      <section>
+        <h2>2. Cihazında saklanan veriler</h2>
+        <ul>
+          <li>Oyuncu adın, seviyen, puanların, jetonların, tribün düzenin, stadyum seviyen, görevlerin ve ayarların (dil, ses, titreşim).</li>
+          <li>Bu veriler yalnızca cihazında tutulur; uygulamayı silince veya Ayarlar → “Verileri sıfırla” ile silinir.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>3. İsteğe bağlı hesap (Apple veya Google ile giriş)</h2>
+        <p>Giriş yapmak zorunlu değildir. Giriş yaparsan Google Firebase Authentication üzerinden şu bilgiler işlenir: kullanıcı kimliği, giriş sağlayıcısı ve sağlayıcının paylaştığı e-posta adresi (Apple'da gizli aktarma adresi olabilir). Şifren bize hiçbir zaman ulaşmaz.</p>
+        <p>Çevrimiçi özellikler için Google Cloud Firestore'da (Avrupa bölgesi) bir profil tutulur: oyuncu adın, seviyen, stadyum seviyen, atmosfer puanın, en iyi maç puanın, tribün düzenin, arkadaş kodun, son görülme zamanın, arkadaş listen ve aldığın tezahürat sayısı. Oyuncu adın, puanların ve tribünün giriş yapmış diğer oyuncular tarafından sıralamalarda ve tribün ziyaretlerinde görülebilir.</p>
+      </section>
+      <section>
+        <h2>4. Reklamlar (Google AdMob)</h2>
+        <ul>
+          <li>Ana ekranların altında bir banner reklam gösterilir. “Bizi destekle” bölümünde isteğe bağlı olarak ödüllü reklam izleyebilirsin; bu reklam oyunda hiçbir şeyi değiştirmez.</li>
+          <li>Reklamları Google AdMob sunar. AdMob reklam göstermek, sıklığı sınırlamak ve dolandırıcılığı önlemek için cihaz reklam kimliği (izin verdiysen), IP adresi, cihaz ve uygulama bilgisi ile reklam etkileşimlerini işleyebilir.</li>
+          <li>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de reklamlardan önce Google'ın onay formu gösterilir; tercihini Ayarlar → “Reklam tercihleri” bölümünden değiştirebilirsin. Onay vermezsen kişiselleştirilmemiş reklam gösterilir veya reklam gösterilmez.</li>
+          <li>Ayrıntılar: <a href="https://policies.google.com/technologies/ads">Google reklam teknolojileri</a>, <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a>.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>5. Destek satın alımları</h2>
+        <p>“Bizi destekle” bölümündeki üç tek seferlik destek ürünü yalnızca geliştirmeye katkı içindir ve oyunda hiçbir şeyi açmaz. Ödemeyi App Store veya Google Play işler; kart bilgilerin bize ulaşmaz. Biz yalnızca mağazanın verdiği satın alma onayını görürüz.</p>
+      </section>
+      <section>
+        <h2>6. Paylaşım</h2>
+        <p>“Tribününü paylaş” özelliği kartını cihazında oluşturur ve sistemin paylaşım ekranını açar. Neyi kiminle paylaşacağına sen karar verirsin; kart sunucularımıza yüklenmez.</p>
+      </section>
+      <section>
+        <h2>7. Oyun motoru ve teknik veriler</h2>
+        <p>3B maç ekranı Unity oyun motoruyla çalışır. Unity Analytics ve bulut hizmetleri kapalıdır. Hata ayıklama dışında çökme veya kullanım analitiği toplamıyoruz.</p>
+      </section>
+      <section>
+        <h2>8. Saklama süresi ve hesabı silme</h2>
+        <p>Çevrimiçi profilin, hesabın açık olduğu sürece saklanır. Ayarlar → <strong>“Hesabımı sil”</strong> ile hesabını ve profilini, arkadaş kodunu ve arkadaş bağlarını hemen silebilirsin. İstersen bize e-posta ile de yazabilirsin; talebini 30 gün içinde yerine getiririz.</p>
+      </section>
+      <section>
+        <h2>9. Çocuklar</h2>
+        <p>Tribün 13 yaşından küçük çocuklara yönelik değildir ve bilerek bu yaştaki çocuklardan kişisel veri toplamayız.</p>
+      </section>
+      <section>
+        <h2>10. Veri paylaşımı ve aktarım</h2>
+        <p>Verilerini satmayız. Veriler yalnızca hizmeti sunan altyapı sağlayıcılarıyla (Google Firebase, Google AdMob, Apple ve Google mağazaları) bu politikadaki amaçlar için işlenir. Bu sağlayıcıların sunucuları Türkiye dışında bulunabilir.</p>
+      </section>
+      <section>
+        <h2>11. Hakların</h2>
+        <p>KVKK ve GDPR kapsamında verilerine erişme, düzeltme, silme ve işlemeye itiraz etme hakların vardır. Talepler için bize yaz.</p>
+      </section>
+      <section>
+        <h2>12. Bağımsızlık notu</h2>
+        <p>Tribün bağımsız bir taraftar oyunudur; hiçbir kulüple bağlantılı değildir ve kulüp tarafından onaylanmamıştır.</p>
+      </section>
+      <section>
+        <h2>13. İletişim ve değişiklikler</h2>
+        <p>Bu politikayı güncelleyebiliriz; geçerli sürüm her zaman bu sayfadadır. Sorular: <a href="mailto:zanagamestudios@gmail.com">zanagamestudios@gmail.com</a></p>
+      </section>
+    </article>
+
+    <!-- ============================== KURMANCÎ ============================== -->
+    <article class="policy" data-content="krd" lang="ku">
+      <div class="notice"><strong>Kurte:</strong> Tribûn lîstikeke futbolê ya belaş e ku tê de tu penaltî û lêdana azad diavêjî û tribûna xwe çêdikî. Lîstik bê hesab tê lîstin û pêşketina te li ser amûra te tê parastin. Heke tu bi Apple an Google têkevî, ji bo rêzbendî û taybetmendiyên hevaltiyê tenê daneyên herî kêm tên bikaranîn. Li binê ekranê reklameke banner tê nîşandan; reklama bi xelat tenê heke tu bi xwe ji beşa “Piştgiriya me bike” hilbijêrî vedibe. Em daneyan nafiroşin û şopandina analîtîk bi kar naynin.</div>
+      <section>
+        <h2>1. Ev polîtîka çi digire nav xwe?</h2>
+        <p>Ev polîtîka diyar dike ka lîstika mobîl a <strong>Tribûn</strong> (iOS û Android), ku ji aliyê Zana Game Studios ve hatiye çêkirin, kîjan daneyan û çima bi kar tîne. Berpirsê daneyan Zana Game Studios e; têkilî: <a href="mailto:zanagamestudios@gmail.com">zanagamestudios@gmail.com</a>.</p>
+      </section>
+      <section>
+        <h2>2. Daneyên li ser amûra te</h2>
+        <ul>
+          <li>Navê te yê lîstikvan, ast, pûan, pere (jeton), rêzkirina tribûnê, asta stadyumê, erk û mîhengên te (ziman, deng, lerizîn).</li>
+          <li>Ev dane tenê li ser amûra te ne; dema tu sepanê jê dibî an bi Mîheng → “Daneyan sifir bike” tên jêbirin.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>3. Hesabê bijarte (têketin bi Apple an Google)</h2>
+        <p>Têketin ne mecbûrî ye. Heke tu têkevî, bi rêya Google Firebase Authentication ev agahî tên bikaranîn: nasnameya bikarhêner, pêşkêşkarê têketinê û navnîşana e-nameyê ya ku pêşkêşkar parve dike (li Apple dibe ku navnîşaneke veşartî be). Şîfreya te qet nagihîje me.</p>
+        <p>Ji bo taybetmendiyên serhêl profîlek li Google Cloud Firestore (herêma Ewropayê) tê parastin: navê te yê lîstikvan, ast, asta stadyumê, pûana atmosferê, pûana maça herî baş, rêzkirina tribûnê, koda hevaltiyê, dema dawî ya dîtinê, lîsteya hevalan û hejmara pîrozbahiyan. Navê te, pûanên te û tribûna te ji aliyê lîstikvanên din ên ketî ve di rêzbendiyan û serdanên tribûnê de dikarin werin dîtin.</p>
+      </section>
+      <section>
+        <h2>4. Reklam (Google AdMob)</h2>
+        <ul>
+          <li>Li binê ekranên sereke reklameke banner tê nîşandan. Di beşa “Piştgiriya me bike” de tu dikarî bi dilxwazî li reklameke bi xelat temaşe bikî; ev reklam di lîstikê de tiştekî naguherîne.</li>
+          <li>Reklaman Google AdMob pêşkêş dike. AdMob dikare ji bo nîşandana reklaman, sînorkirina dubarekirinê û pêşîlêgirtina sextekariyê nasnameya reklamê ya amûrê (heke te destûr dabe), navnîşana IP, agahiyên amûr û sepanê û têkiliyên bi reklaman re bi kar bîne.</li>
+          <li>Li Herêma Aborî ya Ewropayê, Keyaniya Yekbûyî û Swîsreyê berî reklaman forma razîbûnê ya Google tê nîşandan; tu dikarî bijartina xwe ji Mîheng → “Vebijarkên reklamê” biguherînî. Heke tu razî nebî, reklamên ne-kesane tên nîşandan an jî reklam nayên nîşandan.</li>
+          <li>Hûrgulî: <a href="https://policies.google.com/technologies/ads">Teknolojiyên reklamê yên Google</a>, <a href="https://policies.google.com/privacy">Polîtîkaya nepenîtiyê ya Google</a>.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>5. Kirînên piştgiriyê</h2>
+        <p>Sê berhemên piştgiriyê yên yek carî yên di beşa “Piştgiriya me bike” de tenê ji bo alîkariya pêşvebirinê ne û di lîstikê de tiştekî venakin. Dravdanê App Store an Google Play birêve dibe; agahiyên karta te nagihîjin me. Em tenê pejirandina kirînê ya ji firoşgehê dibînin.</p>
+      </section>
+      <section>
+        <h2>6. Parvekirin</h2>
+        <p>Taybetmendiya “Tribûna xwe parve bike” karta te li ser amûra te çêdike û ekrana parvekirinê ya pergalê vedike. Tu biryar didî ka çi bi kê re parve bikî; kart li serverên me nayê barkirin.</p>
+      </section>
+      <section>
+        <h2>7. Motora lîstikê û daneyên teknîkî</h2>
+        <p>Ekrana maçê ya 3D bi motora lîstikê Unity dixebite. Unity Analytics û xizmetên ewrê girtî ne. Em analîtîka têkçûn an bikaranînê kom nakin.</p>
+      </section>
+      <section>
+        <h2>8. Dema parastinê û jêbirina hesab</h2>
+        <p>Profîla te ya serhêl heta ku hesabê te vekirî be tê parastin. Bi Mîheng → <strong>“Hesabê min jê bibe”</strong> tu dikarî hesab, profîl, koda hevaltiyê û girêdanên hevaltiyê yekser jê bibî. Heke tu bixwazî, dikarî bi e-nameyê ji me re jî binivîsî; em daxwaza te di nav 30 rojan de pêk tînin.</p>
+      </section>
+      <section>
+        <h2>9. Zarok</h2>
+        <p>Tribûn ne ji bo zarokên di bin 13 saliyê de ye û em bi zanebûn ji zarokên vî temenî daneyên kesane kom nakin.</p>
+      </section>
+      <section>
+        <h2>10. Parvekirin û veguhastina daneyan</h2>
+        <p>Em daneyên te nafiroşin. Dane tenê bi pêşkêşkarên binesaziyê yên ku xizmetê pêşkêş dikin (Google Firebase, Google AdMob, firoşgehên Apple û Google) ji bo armancên vê polîtîkayê tên bikaranîn. Dibe ku serverên van pêşkêşkaran li derveyî Tirkiyeyê bin.</p>
+      </section>
+      <section>
+        <h2>11. Mafên te</h2>
+        <p>Li gorî KVKK û GDPR mafê te heye ku bigihîjî daneyên xwe, wan rast bikî, jê bibî û li dijî bikaranîna wan îtiraz bikî. Ji bo daxwazan ji me re binivîse.</p>
+      </section>
+      <section>
+        <h2>12. Nîşeya serxwebûnê</h2>
+        <p>Tribûn lîstikeke serbixwe ya alîgiran e; bi tu klûbê ve girêdayî nîne û ji aliyê klûbê ve nehatiye pejirandin.</p>
+      </section>
+      <section>
+        <h2>13. Têkilî û guhertin</h2>
+        <p>Em dikarin vê polîtîkayê nû bikin; guhertoya derbasdar her tim li vê rûpelê ye. Pirs: <a href="mailto:zanagamestudios@gmail.com">zanagamestudios@gmail.com</a></p>
+      </section>
+    </article>
+
+    <!-- ============================== ENGLISH ============================== -->
+    <article class="policy" data-content="en" lang="en">
+      <div class="notice"><strong>Summary:</strong> Tribün is a free football game where you take penalties and free kicks and design your own stand. You can play without an account and your progress stays on your device. If you sign in with Apple or Google, only the minimum data needed for leaderboards and friend features is processed. A banner ad is shown at the bottom of the screen; a rewarded ad only plays if you choose it in “Support us”. We do not sell data and we do not use analytics tracking.</div>
+      <section>
+        <h2>1. What this policy covers</h2>
+        <p>This policy explains which data the <strong>Tribün</strong> mobile game (iOS and Android) by Zana Game Studios processes and why. The controller is Zana Game Studios; contact: <a href="mailto:zanagamestudios@gmail.com">zanagamestudios@gmail.com</a>.</p>
+      </section>
+      <section>
+        <h2>2. Data stored on your device</h2>
+        <ul>
+          <li>Your player name, level, scores, coins, stand layout, stadium level, missions and settings (language, sound, vibration).</li>
+          <li>This data stays on your device; it is removed when you uninstall the app or use Settings → “Reset data”.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>3. Optional account (Sign in with Apple or Google)</h2>
+        <p>Signing in is optional. If you sign in, Google Firebase Authentication processes your user ID, the sign-in provider and the email address the provider shares (with Apple this may be a private relay address). We never receive your password.</p>
+        <p>For online features a profile is kept in Google Cloud Firestore (Europe region): your player name, level, stadium level, atmosphere score, best match score, stand layout, friend code, last-seen time, friend list and the number of cheers you received. Your player name, scores and stand can be seen by other signed-in players in leaderboards and stand visits.</p>
+      </section>
+      <section>
+        <h2>4. Ads (Google AdMob)</h2>
+        <ul>
+          <li>A banner ad is shown at the bottom of the main screens. In “Support us” you may choose to watch a rewarded ad; it changes nothing in the game.</li>
+          <li>Ads are served by Google AdMob, which may process the device advertising ID (if you allow it), IP address, device and app information and ad interactions to show ads, limit frequency and prevent fraud.</li>
+          <li>In the EEA, the UK and Switzerland Google's consent form is shown before ads; you can change your choice in Settings → “Ad choices”. Without consent, non-personalised ads or no ads are shown.</li>
+          <li>Details: <a href="https://policies.google.com/technologies/ads">Google advertising technologies</a>, <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>5. Support purchases</h2>
+        <p>The three one-time support products in “Support us” only contribute to development and unlock nothing in the game. Payment is handled by the App Store or Google Play; we never receive your card details, only the store's purchase confirmation.</p>
+      </section>
+      <section>
+        <h2>6. Sharing</h2>
+        <p>“Share your stand” creates your card on your device and opens the system share sheet. You decide what to share and with whom; the card is not uploaded to our servers.</p>
+      </section>
+      <section>
+        <h2>7. Game engine and technical data</h2>
+        <p>The 3D match runs on the Unity engine. Unity Analytics and Unity cloud services are disabled. We do not collect crash or usage analytics.</p>
+      </section>
+      <section>
+        <h2>8. Retention and account deletion</h2>
+        <p>Your online profile is kept while your account exists. Settings → <strong>“Delete my account”</strong> immediately deletes your account, profile, friend code and friend links. You can also email us; we complete requests within 30 days.</p>
+      </section>
+      <section>
+        <h2>9. Children</h2>
+        <p>Tribün is not directed at children under 13 and we do not knowingly collect personal data from them.</p>
+      </section>
+      <section>
+        <h2>10. Sharing and transfers</h2>
+        <p>We do not sell your data. Data is processed only by the providers that run the service (Google Firebase, Google AdMob, the Apple and Google stores) for the purposes in this policy. Their servers may be located outside Türkiye.</p>
+      </section>
+      <section>
+        <h2>11. Your rights</h2>
+        <p>Under GDPR and Turkish KVKK you have the right to access, correct and delete your data and to object to its processing. Contact us to make a request.</p>
+      </section>
+      <section>
+        <h2>12. Independence notice</h2>
+        <p>Tribün is an independent fan game; it is not affiliated with or endorsed by any club.</p>
+      </section>
+      <section>
+        <h2>13. Contact and changes</h2>
+        <p>We may update this policy; the current version is always on this page. Questions: <a href="mailto:zanagamestudios@gmail.com">zanagamestudios@gmail.com</a></p>
+      </section>
+    </article>
+
+    <p class="footer">© 2026 Zana Game Studios · Tribün · <a href="mailto:zanagamestudios@gmail.com">zanagamestudios@gmail.com</a></p>
+  </main>
+  <script>
+    const buttons = document.querySelectorAll("[data-language]");
+    const contents = document.querySelectorAll("[data-content]");
+    const titles = {
+      tr: "Tribün — Gizlilik Politikası",
+      krd: "Tribûn — Polîtîkaya nepenîtiyê",
+      en: "Tribün — Privacy Policy"
+    };
+    function setLanguage(language) {
+      buttons.forEach((button) => {
+        const on = button.dataset.language === language;
+        button.classList.toggle("active", on);
+        button.setAttribute("aria-pressed", String(on));
+      });
+      contents.forEach((content) => content.classList.toggle("active", content.dataset.content === language));
+      document.documentElement.lang = language === "krd" ? "ku" : language;
+      document.title = titles[language] || titles.tr;
+      history.replaceState(null, "", "#" + language);
+    }
+    buttons.forEach((button) => button.addEventListener("click", () => setLanguage(button.dataset.language)));
+    const initial = location.hash.slice(1).toLowerCase();
+    const alias = { ku: "krd" };
+    const lang = alias[initial] || initial;
+    if (["krd", "tr", "en"].includes(lang)) setLanguage(lang);
+  </script>
+</body>
+</html>

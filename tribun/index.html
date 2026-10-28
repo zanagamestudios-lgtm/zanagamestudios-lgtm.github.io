@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tribün — penaltı at, tribününü kur, stadyumunu büyüt. Ücretsiz futbol oyunu. Zana Game Studios.">
+  <meta name="theme-color" content="#0a0d14">
+  <meta property="og:title" content="Tribün — Sen de tribününü kur!">
+  <meta property="og:description" content="Penaltı at, tribününü süsle, arkadaşlarınla paylaş. Ücretsiz indir.">
+  <meta property="og:image" content="logo.png">
+  <link rel="icon" type="image/png" href="logo.png">
+  <title>Tribün — Zana Game Studios</title>
+  <style>
+    :root { color-scheme: dark; --ink:#f3f1ea; --muted:#a9b0ac; --red:#c41224; --green:#0e9a4e; --gold:#f0be4a; --line:rgba(255,255,255,.14); }
+    * { box-sizing: border-box; }
+    body { margin:0; min-height:100vh; color:var(--ink); background:#0a0d14; font:17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; display:flex; }
+    body::before { content:""; position:fixed; inset:0; z-index:-1;
+      background: radial-gradient(circle at 12% 0, rgba(196,18,36,.35), transparent 42%), radial-gradient(circle at 90% 100%, rgba(14,154,78,.32), transparent 45%), #0a0d14; }
+    main { width:min(100% - 32px, 560px); margin:auto; padding:40px 0; text-align:center; }
+    .logo { width:132px; height:132px; border-radius:30px; box-shadow:0 18px 50px rgba(0,0,0,.55); }
+    h1 { margin:18px 0 0; font-size:52px; letter-spacing:.08em; font-weight:900; }
+    .studio { margin:2px 0 18px; color:var(--muted); font-size:13px; letter-spacing:.3em; text-transform:uppercase; font-weight:700; }
+    .stripe { width:84px; height:5px; margin:0 auto 18px; background:linear-gradient(90deg,var(--red) 50%,var(--green) 50%); border-radius:3px; }
+    p.lead { font-size:20px; margin:0 0 8px; font-weight:700; }
+    p.sub { color:var(--muted); margin:0 0 26px; }
+    .stores { display:flex; flex-direction:column; gap:12px; }
+    a.store { display:flex; align-items:center; justify-content:center; gap:12px; padding:16px 20px; border-radius:18px; text-decoration:none; color:#000; background:#fff; font-weight:800; font-size:18px; }
+    a.store.pending { background:rgba(255,255,255,.12); color:var(--muted); pointer-events:none; }
+    a.store small { display:block; font-weight:600; font-size:12px; opacity:.7; }
+    .lang { margin-top:30px; color:var(--muted); font-size:14px; }
+    .lang p { margin:6px 0; }
+    footer { margin-top:28px; font-size:13px; color:var(--muted); }
+    footer a { color:var(--gold); }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="logo" src="logo.png" alt="Tribün">
+    <h1>TRİBÜN</h1>
+    <div class="studio">Zana Game Studios</div>
+    <div class="stripe"></div>
+    <p class="lead">Penaltı at, tribününü kur, stadyumunu büyüt.</p>
+    <p class="sub">Arkadaşının kodunu gir, tribününü ziyaret et ve sen de kendi tribününü paylaş. Ücretsiz.</p>
+    <div class="stores">
+      <a class="store" id="play" href="https://play.google.com/store/apps/details?id=com.zanagamestudios.tribun">▶ <span>Google Play<small>Android</small></span></a>
+      <a class="store pending" id="appstore" href="#"> <span>App Store<small>Çok yakında · Zû de · Coming soon</small></span></a>
+    </div>
+    <div class="lang">
+      <p><strong>KU</strong> · Penaltiyê biavêje, tribûna xwe ava bike, stadyuma xwe mezin bike. Belaş.</p>
+      <p><strong>EN</strong> · Take penalties, build your stand, grow your stadium. Free.</p>
+    </div>
+    <footer>© 2026 Zana Game Studios · <a href="../tribun-privacy/">Gizlilik · Privacy</a> · <a href="mailto:zanagamestudios@gmail.com">zanagamestudios@gmail.com</a></footer>
+  </main>
+  <script>
+    // App Store link: set APP_STORE_URL once the app is live; Android visitors see Google Play first.
+    const APP_STORE_URL = "";
+    const a = document.getElementById("appstore");
+    if (APP_STORE_URL) { a.href = APP_STORE_URL; a.classList.remove("pending"); a.querySelector("small").textContent = "iPhone · iPad"; }
+    if (/iphone|ipad|ipod/i.test(navigator.userAgent) && APP_STORE_URL) a.parentNode.prepend(a);
+  </script>
+</body>
+</html>
