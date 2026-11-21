@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peyva Rojê — İndir</title>
+<meta name="description" content="Peyva Rojê: Kürtçe kelime bulmacası. App Store ve Google Play.">
+<meta property="og:title" content="Peyva Rojê">
+<meta property="og:description" content="Kürtçe kelime bulmacası — App Store ve Google Play">
+<style>
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#2b2d6b;color:#fff;font:17px/1.5 system-ui,-apple-system,sans-serif;text-align:center}
+main{width:min(100% - 32px,420px)}h1{font-size:30px;margin:0 0 4px}p{opacity:.85;margin:0 0 28px}
+a.b{display:block;margin:12px 0;padding:14px 18px;border-radius:14px;background:#fff;color:#111;font-weight:700;text-decoration:none}
+#d{opacity:.75;font-size:15px;margin-bottom:18px}small{display:block;margin-top:24px;opacity:.6}
+</style>
+</head>
+<body><main>
+<h1>Peyva Rojê</h1><p>Kürtçe kelime bulmacası</p>
+<div id="d"></div>
+<a class="b" id="ios" href="https://apps.apple.com/app/id6828560687">App Store'dan indir</a>
+<a class="b" id="and" href="https://play.google.com/store/apps/details?id=com.zanagamestudios.peyva_roje">Google Play'den indir</a>
+<small>Zana Game Studios</small>
+</main>
+<script>
+(function(){
+var u=navigator.userAgent||"";
+var isIOS=/iPhone|iPad|iPod/i.test(u)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
+var isAnd=/Android/i.test(u);
+var webIOS="https://apps.apple.com/app/id6828560687", webAnd="https://play.google.com/store/apps/details?id=com.zanagamestudios.peyva_roje";
+var d=document.getElementById("d");
+function go(app,web){
+  d.textContent="Mağaza açılıyor…";
+  var t=setTimeout(function(){ if(!document.hidden) location.href=web; },1500);
+  document.addEventListener("visibilitychange",function(){ if(document.hidden) clearTimeout(t); });
+  location.href=app;
+}
+if(isAnd){ document.getElementById("ios").style.display="none";
+  go("intent://details?id=com.zanagamestudios.peyva_roje#Intent;scheme=market;package=com.android.vending;S.browser_fallback_url="+encodeURIComponent(webAnd)+";end", webAnd); }
+else if(isIOS){ document.getElementById("and").style.display="none";
+  go("itms-apps://apps.apple.com/app/id6828560687", webIOS); }
+})();
+</script>
+</body></html>
